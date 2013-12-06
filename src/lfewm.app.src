@@ -1,0 +1,18 @@
+%%-*- mode: erlang -*-
+{application, lfewm,
+ [
+  {description, "lfewm"},
+  {vsn, "1"},
+  {modules, []},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  inets,
+                  crypto,
+                  mochiweb,
+                  webmachine
+                 ]},
+  {mod, { lfewm_app, []}},
+  {env, []}
+ ]}.
