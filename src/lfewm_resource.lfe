@@ -5,12 +5,13 @@
 
 (include-lib "webmachine/include/webmachine.hrl")
 
-;; i think we need this because it doesn't get parsed from the .hrl ...
-(defun ping (req_data state)
-  (tuple 'pong req_data state))
+;; rvirding updated lfe to pull in functions from a .hrl, but we still
+;; need the export above for now.
+;;(defun ping (req_data state)
+;;  (tuple 'pong req_data state))
 
 (defun init (args)
-  (tuple ok undefined))
+  (tuple 'ok 'undefined))
 
 (defun to_html (req_data state)
   (tuple '"<html><body> Hello, LFE</body></html>" req_data state))
