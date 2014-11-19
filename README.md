@@ -2,7 +2,7 @@
 
 Basic direct port of the simple app created by the
 [webmachine](https://github.com/basho/webmachine) new_webmachine.sh
-script from Erlang to LFE. Current expections:
+script from Erlang to LFE. Current exceptions:
 
  * need to implement the lfewm_sup:upgrade function
  * has to implement lfewm_resource:ping manually
